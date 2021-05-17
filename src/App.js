@@ -102,7 +102,7 @@ function App() {
         pay: "El cliente debe pagar con alguna cantidad",
       });
     } else {
-      if(amount < pay){
+      if(amount <= pay){
         let resTemp = pay - amount;
         denomination.forEach(
           (denom, index) =>{
